@@ -20,7 +20,10 @@ def create_app(config_class=Config):
 
     # Importar rotas aqui para evitar importações circulares
     from app.routes import auth_bp
+    from app.scripts import scripts_bp
+    
     app.register_blueprint(auth_bp, url_prefix='/api')
+    app.register_blueprint(scripts_bp, url_prefix='/api/scripts')
 
     # Garantir que as pastas necessárias existam
     import os
