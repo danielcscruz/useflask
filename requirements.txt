@@ -26,6 +26,7 @@ Flask-Login==0.6.3
 Flask-Migrate==4.1.0
 Flask-SQLAlchemy==3.1.1
 graphql-core==3.2.5
+gunicorn==23.0.0
 idna==3.10
 ipython==8.12.3
 itsdangerous==2.2.0
@@ -50,6 +51,7 @@ pexpect==4.9.0
 pickleshare==0.7.5
 platformdirs==4.3.8
 prompt_toolkit==3.0.51
+psycopg2-binary==2.9.10
 ptyprocess==0.7.0
 pure_eval==0.2.3
 pycparser==2.22

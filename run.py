@@ -38,4 +38,8 @@ if __name__ == "__main__":
         print("Tabelas do banco de dados verificadas!")
     
     # Executar o servidor de desenvolvimento
-    app.run(debug=True)
+    # app.run(debug=True)
+
+    # Produção
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
